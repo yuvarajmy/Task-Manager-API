@@ -1,13 +1,15 @@
 package service;
 
 import model.Task;
+import repository.TaskRepository;
 
 import java.util.List;
 
 public class TaskService {
+    private TaskRepository taskRepository;
 
     public List<Task> getAllTasks(){
-        return null;
+        return taskRepository.findAll();
     }
     public Task getTaskById(Long id){
         return null;
